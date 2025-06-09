@@ -1,0 +1,3 @@
+1) Para inicializar o servidor NODE, usar o comando "nodemon" no terminal localizado na pasta projeto_api
+
+2) Para rodar o react, utilizar o camando "npm run dev" na pasta cadastro-usuario
