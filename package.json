@@ -4,8 +4,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon",
-    "build": "npm install"
+    "start": "node server.js",
+    "build": ""
   },
   "engines": {
     "node": "22"
@@ -20,6 +20,7 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "nodemon": "^3.1.4",
     "prisma": "^6.6.0",
     "tsup": "^8.5.0"
   }
