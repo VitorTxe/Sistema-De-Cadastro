@@ -26,7 +26,7 @@ function Home() {
       age: inputAge.current.value,
       email: inputEmail.current.value,
     });
-    getUsers(); // TODO POR QUE ESSA FUNÇÃO ATUALIZA A PAGINA ASSIM QUE UM NOVO REGISTRO É INSERIDO
+    getUsers();
   }
 
   async function deleteUsers(id) {
@@ -40,9 +40,24 @@ function Home() {
     <div className="container">
       <form>
         <h1>Cadastro de Usuários</h1>
-        <input placeholder="Nome" name="Nome" type="text" ref={inputName} />
-        <input placeholder="Idade" name="Idade" type="number" ref={inputAge} />
-        <input placeholder="Email" name="Email" type="email" ref={inputEmail} />
+        <input
+          placeholder="Insira seu nome"
+          name="Nome"
+          type="text"
+          ref={inputName}
+        />
+        <input
+          placeholder="Insira sua idade"
+          name="Idade"
+          type="number"
+          ref={inputAge}
+        />
+        <input
+          placeholder="Insira seu e-mail"
+          name="Email"
+          type="email"
+          ref={inputEmail}
+        />
         <button type="button" onClick={createUsers}>
           Cadastrar
         </button>
